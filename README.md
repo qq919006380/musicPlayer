@@ -1,6 +1,6 @@
 # musicPlayer
 #API
-##属性
+## 属性
 ```
 var audioObject = new Audio('http://xxx.com/xx.mp3')
 ```
