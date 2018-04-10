@@ -26,7 +26,7 @@ function getmusic(callback) {
 	var xhr = new XMLHttpRequest()
 	xhr.open("GET", "music.json", true)
 	xhr.onload = function() {
-		callback(JSON.parse(this.responseText))
+		callback(JSON.parse(this.responseText)) //调用一个callback()处理响应回来的内容
 		//...
 	}
 	xhr.send()
