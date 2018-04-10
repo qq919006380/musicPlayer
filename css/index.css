@@ -1,0 +1,73 @@
+body{
+	position: relative;
+}
+.musicbox:after, .musicbox .music:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.cover{
+	position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url(http://cloud.hunger-valley.com/17-9-22/87786461.jpg) center center no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+}
+.musicbox{
+	font-size: 16px;
+	border: solid 1px #76dba3;
+	background: rgba(255,255,255,0.85);
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-family: cursive;
+	width: 340px;
+
+}
+.music-panel{
+    padding: 20px 20px 5px 20px;
+}
+.musicbox .control,.musicbox .info{
+	float: left;
+	color: rgb(238,138,135);
+}
+.musicbox .control{
+	margin-top: 25px;
+}
+.musicbox .control>span{
+	margin-left: 10px;
+	cursor: pointer;
+}
+.musicbox .control .fa{
+	width: 14px;
+}
+.musicbox .info{
+	margin-left: 40px;
+}
+.musicbox .info>.title{
+	font-size: 18px;
+}
+.musicbox .info>.auther{
+	font-size: 13px;
+}
+
+.musicbox .progress>.bar{
+	width: 260px;
+	height: 3px;
+	margin-top: 5px;
+	background:rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+}
+.musicbox .progress>.bar>.progress-now{
+	width: 0;
+	height: 3px;
+	background: #ee8a87;
+}
+.musicbox .progress>.time{
+	text-align: right;
+}
+
